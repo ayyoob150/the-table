@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  margin: 50px;
+}
+#th{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  background-color: rgb(98, 98, 254);
+  color: white;
+}
+
+#td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.myheader{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(98, 98, 254);
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#button1{
+  margin: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(98, 98, 254);
+  border: none;
+  border-radius: 10px;
+  padding: 6px;
+}
+#button2{
+  margin: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(193, 56, 79);
+  border: none;
+  border-radius: 10px;
+  padding: 6px;
+}
+#thetable{
+ 
+  
+  justify-content: center;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: rgb(98, 98, 254);
+  font-size: 25px;
+ 
+}
+.search{
+  margin: 20px;
+}
+
+.image-container{
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+.image{
+height: 200px;
+width: 200px;
+margin: 20px;
+}
+.image-area{
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.pagination{
+  display: block;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  background-color: rgb(235, 235, 235);
+  padding: 20px;
+
+}
+li {
+  display: inline;
+  flex-direction: column;
+}
+a {
+  margin: 5px;
+  padding: 10px;
+  display: inline;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.active{
+  background-color:rgb(98, 98, 254);
+}
