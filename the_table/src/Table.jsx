@@ -3,7 +3,7 @@ import Model from './Model';
 import Model2 from './Model2';
 
 
-const Table = ({data,setData}) => {
+const Table = ({data,setData, records}) => {
   
   const [isOpen , setIsOpen] = useState(false);
   const [isOpen1 , setIsOpen1] = useState(false);
@@ -25,21 +25,23 @@ const Table = ({data,setData}) => {
   return (
     <>
     <table className="table">
-      <tr>
+      <thead>
       <th id="th">S.No.</th>
       <th id="th">Title</th>
+      <th id="th">Image</th>
       <th id="th" >Price</th>
       <th id="th" >Action</th>
-      </tr>
-      {data.map((data,index)=>{
-        return<tr key={index}>
+      </thead>
+      {records.map((data,index)=>{
+        return<tbody className={`tr-${index}`} key={index}>
           <td id='td'>{data.id}</td>
           <td id='td'>{data.title}</td>
+          <td id='td'><img src={data.image} alt={data.title} className='image' /></td>
           <td id='td'>{data.price}</td>
           <td id='td'>
             <button id='button1' onClick={()=>handler1(data)} >Edit</button>
             <button id='button2' onClick={()=>handler2(data.id)}>Delete</button></td>
-        </tr>
+        </tbody>
       })}
     </table>
     {isOpen && <Model setIsOpen={setIsOpen} id={id} data={data} setData={setData}/>}

@@ -6,17 +6,14 @@
 
 
 .table{
-  border: 1px solid black;
   border-collapse: collapse;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
-  margin: 50px;
 }
 #th{
-  border: 1px solid black;
-  border-collapse: collapse;
+  border: none;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -26,8 +23,7 @@
 }
 
 #td {
-  border: 1px solid black;
-  border-collapse: collapse;
+  border: none;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -40,6 +36,7 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(98, 98, 254);
+  width: 100%;
 }
 .main{
   display: flex;
@@ -49,25 +46,29 @@
 }
 #button1{
   margin: 5px;
-  color: white;
+  color: rgb(103, 103, 255);
   font-weight: bold;
-  background-color: rgb(98, 98, 254);
+  background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 10px;
+  border: 0.5px solid blue;
   padding: 6px;
+  cursor: pointer;
 }
 #button2{
   margin: 5px;
-  color: white;
+  color: rgb(216, 0, 0);
   font-weight: bold;
-  background-color: rgb(193, 56, 79);
+  background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 10px;
+  border: 0.5px solid rgb(215, 0, 0);
   padding: 6px;
+  cursor: pointer;
+
 }
 #thetable{
- 
-  
+
   justify-content: center;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -88,23 +89,19 @@
  
 }
 .image{
-height: 200px;
-width: 200px;
-margin: 20px;
+height: 50px;
+width: 50px;
+margin: 10px;
+padding: 5px;
+border-radius: 50%;
 }
-.image-area{
-  font-weight: bold;
-  font-size: 1.5rem;
-  background-color: black;
-  color: white;
-  padding: 20px;
-}
+
 .pagination{
   display: block;
   flex-direction: column;
   list-style-type: none;
   margin: 0;
-  background-color: rgb(235, 235, 235);
+  background-color: rgba(220, 228, 245, 0.263);
   padding: 20px;
 
 }
@@ -124,4 +121,11 @@ a {
 }
 .active{
   background-color:rgb(98, 98, 254);
+}
+th{
+  height: 50px;
+  font-size: 1.1rem;
+}
+tbody:nth-child(even) {
+  background-color: rgb(245, 242, 242);
 }

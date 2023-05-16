@@ -8,7 +8,6 @@ const Model = ({setIsOpen, cData,data,setData}) => {
         // {...itm , [e.target.name] : [e.target.value]} : itm
         
     ))
-    
     setData(newData)
   }
   const handleInput2 =(e) =>{
@@ -17,7 +16,14 @@ const Model = ({setIsOpen, cData,data,setData}) => {
         // {...itm , [e.target.name] : [e.target.value]} : itm
         
     ))
-    
+    setData(newData)
+  }
+  const handleInput3 =(e) =>{
+    const newData = data.map((itm)=>(
+        itm.id === cData.id ? {...itm, image: e.target.value } : itm
+        // {...itm , [e.target.name] : [e.target.value]} : itm
+        
+    ))
     setData(newData)
   }
 
@@ -36,6 +42,7 @@ const Model = ({setIsOpen, cData,data,setData}) => {
     {/* <p className='praDelete1'>Do you want to edit data ?</p> */}
     <div className='text-field'>
         <input type='text' name='title' className='title' placeholder='Title'  onChange={handleInput1}/>
+        <input type='text' name='image' className='image-edit' placeholder='Image Url'  onChange={handleInput3}/>
         <input type='text' name='price' className='price' placeholder='Price'  onChange={handleInput2}/>
     </div> 
         
